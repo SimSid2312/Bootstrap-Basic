@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TextStyling</title>
+
+    <meta name="viewport" content="width-device-width",initialscale="1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+      <h1>Website making - text styling</h1>
+      <!--Highlighting, using mark tags-->
+      <p>You can hightligh <mark>a text and words</mark> using mark tag!</p>
+
+      <!-- Quoting using blockQuote and footer tags-->
+      <p>Here is how you can Quote</p>
+      <blockquote>
+          <p>The best view comes after the hardest climb</p>
+          <footer>Unknown</footer>
+      </blockquote>
+
+      <!-- List using dl, dt and dd tags-->
+      <p>What to do when you are bored?</p>
+      <dl>
+          <dt>1. Indoors</dt>
+            <dd>- watch netflix</dd>
+            <dd>- talk to mum</dd>
+            <dd>- take a nap</dd>
+
+          <dt> 2. Outdoors</dt>
+            <dd>- Party</dd>
+            <dd>- Go back home</dd>
+      </dl>
+
+      <!-- Highlighting the text like showing a piece of code in highlight use a code tag and for multiline code - use pre tags-->
+      <p>This is how you use code tag - to put up a peice of programming code in highlight version - <code>setName("Simran");</code></p>
+      <p>This is when you want to put up a block of code use pre tags</p>
+      <pre>
+          for(int i=0;i<5;i++){
+           System.out.println(i);
+          }
+      </pre>
+
+      <!-- predefined textual colors;Built in color classes-->
+      <p class="text-muted">This is non clickable</p>  <!-- this makes the text font grey -->
+      <p class="text-danger">Ohh, danger LOL run!!</p>
+      <p class="text-success">congratulation you won!</p>
+      <!-- giving instruction user to be performed for the keyboard input-->
+      <p>Press <kbd>ctrl+alt+del</kbd></p>
+
+      <!-- bgcolor-->
+      <p class="bg-success">WOW</p>
+      <p class="bg-danger">Danger</p>
+
+  </div>
+
+</body>
+</html>

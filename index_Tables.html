@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tables</title>
+    <meta name="viewport" content="width-device-width",initialscale="1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+  <div class="container">
+
+      <!-- creating tables using table tags-->
+      <!-- types of table: simple ; condensed ; striped -->
+      <h1>Simple Table</h1>
+      <table class="table">
+          <!-- Simple one-->
+           <thead>
+             <tr>
+                 <th>FirstName</th>
+                 <th>LastName</th>
+                 <th>Score</th>
+             </tr>
+           </thead>
+
+           <tbody>
+
+            <tr>
+                <td>Simran</td>
+                <td>Sidhu</td>
+                <td>96</td>
+            </tr>
+
+            <tr>
+                <td>Rich</td>
+                <td>Singh</td>
+                <td>98</td>
+            </tr>
+
+            <tr>
+                <td>Panthom</td>
+                <td>Jackal</td>
+                <td>95</td>
+            </tr>
+
+
+           </tbody>
+      </table>
+
+      <!-- Condensed table - has relatively lesser padding in comparison to the simple table-->
+      <h1>Condensed Table -relatively less padded as compared to simple table</h1>
+      <table class="table table-condensed">
+          <thead>
+            <tr>
+                <th>ProductName</th>
+                <th>Quantity</th>
+                <th>Price</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+                <td>Apple</td>
+                <td>5</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Mango</td>
+                <td>6</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>Grape</td>
+                <td>15</td>
+                <td>100</td>
+            </tr>
+          </tbody>
+      </table>
+
+      <h1>Striped Table-- it just has a little tint</h1>
+      <table class="table table-striped">
+          <thead>
+            <th>Class</th>
+            <th>StudentCount</th>
+            <th>MaxCountAllowed</th>
+          </thead>
+          <tbody>
+             <tr>
+                 <td>Math</td>
+                 <td>80</td>
+                 <td>100</td>
+             </tr>
+             <tr>
+                 <td>Physics</td>
+                 <td>90</td>
+                 <td>100</td>
+             </tr>
+             <tr>
+                 <td>Chemistry</td>
+                 <td>89</td>
+                 <td>100</td>
+             </tr>
+
+          </tbody>
+      </table>
+
+  </div>
+
+</body>
+</html>

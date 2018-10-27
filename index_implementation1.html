@@ -4,35 +4,32 @@
     <meta charset="UTF-8">
     <title>NavigationBar</title>
     <meta name="viewport" content="width=device-width",initialscale="1">
-    <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-    <!-- Optional theme -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-    <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
 </head>
 <body>
   <nav class="navbar navbar-default "> <!-- main menu bar at the top of the screen-->
     <div class="container">
 
-        <!--Logo--let bootstrap know that is not  a button ie. is not a generic menu item-->
+        <!--Logo--let bootstrap know that is not  a button and is not a generic menu item-->
         <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button> <!-- This code makes the navbar item to collapse to a button, when the side of the window shrink- i.e in mobile devices.-->
             <img src="Logo.JPG" class="img-responsive" style="float:left" width="40" height="40"/>
             <a href="#" class="navbar-brand">VenturX:Prototype</a>
-
         </div>
 
-
-        <div>
-          <ul class="nav navbar-nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Contact</a></li>
+        <!-- Menu Item-->
+        <div class="collapse navbar-collapse" id="mainNavbar">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#">Hello, 16@test.com</a></li>
+              <li><a href="#">Logout</a></li>
           </ul>
-
         </div>
 
 
@@ -49,7 +46,7 @@
                        <td>Fill in who are your customers?</td>
                    </tr>
                    <tr>
-                       <th>Market</th>
+                       <th>Pain</th>
                        <td>What is the pain statement that you are trying to solve for them?</td>
                    </tr>
                    </tr>
@@ -67,7 +64,7 @@
    </div>
 
   <br>
-  <footer>
+   <footer>
       <div class="container">
               <p class="text-success" style="background-color: bisque">
                   <a href="#">Small Conversation?</a>
@@ -83,7 +80,6 @@
           </p>
           </p>
       </div>
-
   </footer>
 
 

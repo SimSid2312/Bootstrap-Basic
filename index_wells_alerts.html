@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NavigationBar</title>
+    <meta name="viewport" content="width=device-width",initialscale="1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<body>
+
+     <!-- Top Menu Bar -->
+    <nav class="navbar navbar-inverse">
+     <div class="container-fluid">
+          <!--Logo-->
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavbar">
+                 <span class="icon-bar"></span>
+                 <span class="icon-bar"></span>
+                 <span class="icon-bar"></span>
+              </button> <!-- This code makes the navbar item to collapse to a button when the side of the window shrink- i.e in mobile devices.-->
+              <a href="#" class="navbar-brand">SIDHU</a>
+          </div>
+         <!-- Menu item-->
+         <div class="collapse navbar-collapse" id="mainNavbar">
+             <ul class="nav navbar-nav">
+                 <li class="active"><a href="#">HOME</a></li>
+                 <li><a href="#">ABOUT</a></li>
+                 <li><a href="#">CONTACT</a></li>
+
+                 <!-- dropdown--->
+                 <li class="dropdown">
+                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">MyProfile <span class="caret"></span> </a>
+                     <ul class="dropdown-menu" role="menu">
+                         <li><a href="#">friends</a></li>
+                         <li><a href="#">photos</a></li>
+                         <li><a href="#">setting</a></li>
+                     </ul>
+                 </li>
+             </ul>
+
+
+
+         </div>
+
+
+
+
+     </div>
+
+    </nav>
+
+
+    <!-- Main Content-->
+    <div class="container">
+        <h1> Wells are sections with border and grey background</h1>
+        <div class="well">well</div>
+        <div class="well well-sm">well well-sm</div>
+        <h2>Alerts</h2>
+        <div class="alert alert-success">Congratulations, you just won the game!</div> <!--green background-->
+        <div class="alert alert-danger">Going to next Life!</div> <!--red background-->
+        <div class="alert alert-info">Invalid move, my friend!</div> <!-- blue background-->
+
+        <h3>Giving user ability to close alert - info based ! Two way- direct and fade in</h3>
+        <div class="alert alert-info" >
+            Invalid move, my friend! (This will disappear immediately)
+            <a href class="close" data-dismiss="alert" aria-label="alert">&times;</a>
+        </div>
+
+        <div class="alert alert-danger fade in" > <! -- fade and in are two different class-->
+             Are you sure about deleting your account?(This will fade in)
+            <a href class="close" data-dismiss="alert" aria-label="alert">&times;</a>
+        </div>
+    </div>
+
+
+</body>
+</html>
